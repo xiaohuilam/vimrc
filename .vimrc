@@ -281,7 +281,7 @@ if executable('coffeetags')
 endif
 
 " Nerd Tree
-let NERDChristmasTree=0
+let NERDChristmasTree=1
 let NERDTreeWinSize=30
 let NERDTreeChDirMode=2
 let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
@@ -497,14 +497,20 @@ map <C-s-a> :wqall<CR>
 
 map pp :GFiles<CR>
 map po :History<CR>
+map pa :Files<CR>
 map gc :Commits<CR>
 map gcf :BCommits<CR>
 
-imap pp <ESC>:GFiles<CR>
-imap po <ESC>:History<CR>
-imap gc <ESC>:Commits<CR>
-imap gcf <ESC>:BCommits<CR>
+map jj <C-]>
+map kk <C-t>
+map <C-j> <C-]>
+map <C-k> <C-t>
+imap <C-j> <ESC><C-]>
+imap <C-k> <ESC><C-t>
 
+map s zm
+map ss zc
+map sss /unction<space>
 
 nmap <leader><tab> <plug>(fzf-maps-n)
 xmap <leader><tab> <plug>(fzf-maps-x)

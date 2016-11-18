@@ -90,7 +90,6 @@ Plug 'slim-template/vim-slim'
 Plug 'Glench/Vim-Jinja2-Syntax'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-rails',      { 'for': []      }
-Plug 'derekwyatt/vim-scala'
 Plug 'ensime/ensime-vim',    { 'for': 'scala' } " sbt/ensimeConfig
 Plug 'honza/dockerfile.vim'
 Plug 'solarnz/thrift.vim'

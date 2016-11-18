@@ -18,8 +18,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'terryma/vim-multiple-cursors'
 
-Plug 'phpvim/phpcd.vim', { 'for': 'php' , 'do': 'composer update' }
-Plug 'phpvim/phpfold.vim', { 'for': 'php', 'do':'composer update' }
 
 Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
@@ -98,6 +96,8 @@ Plug 'dag/vim-fish'
 Plug 'chrisbra/unicode.vim', { 'for': 'journal' }
 
 
+Plug 'phpvim/phpcd.vim', { 'for': 'php' , 'do': 'composer update' }
+Plug 'phpvim/phpfold.vim', { 'for': 'php', 'do':'composer update' }
 
 call plug#end()
 
@@ -590,6 +590,7 @@ endif
 imap ii <ESC>
 imap aa <ESC>
 imap oo <ESC>
+imap <tab><tab> <C-x><C-o>
 
 set pastetoggle=<F9>
 set modelines=2

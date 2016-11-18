@@ -501,8 +501,8 @@ map pa :Files<CR>
 map gc :Commits<CR>
 map gcf :BCommits<CR>
 
-map jj <C-]>
-map kk <C-t>
+map kk <C-]>
+map jj <C-t>
 map <C-j> <C-]>
 map <C-k> <C-t>
 imap <C-j> <ESC><C-]>

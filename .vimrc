@@ -45,7 +45,8 @@ Plug 'junegunn/vim-ruby-x', { 'on': 'RubyX' }
 Plug 'junegunn/fzf',        { 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
-
+"Plug 'godlygeek/tabular'
+"Plug 'plasticboy/vim-markdown'
 
 Plug 'tomasr/molokai'
 Plug 'chriskempson/vim-tomorrow-theme'
@@ -307,11 +308,6 @@ nnoremap <silent> <leader>d :Goyo<cr>
 let g:goyo_margin_top=1
 let g:goyo_margin_bottom=1
 
-
-" For snippet_complete marker.
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
 
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
@@ -587,6 +583,9 @@ if has('termguicolors')
 endif
 
 
+nmap ff F
+nmap uu <C-r>
+
 imap ii <ESC>
 imap aa <ESC>
 imap oo <ESC>
@@ -609,3 +608,4 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<Esc>'
 
+let g:vim_markdown_frontmatter=1
